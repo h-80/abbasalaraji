@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="عباس الأعرجي">
+    <meta name="application-name" content="عباس الأعرجي">
+    <meta name="theme-color" content="#000000">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <title>الرادود عباس الأعرجي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            min-height: 100vh;
+            background: #000;
+            background-image: url('https://a.top4top.io/p_38162s5pf0.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 0 20px 60px 20px;
+        }
+        
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            z-index: 10;
+        }
+        
+        .card {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+            padding: 14px 24px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(12px);
+            border-radius: 60px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            transition: all 0.25s ease;
+            font-family: 'Cairo', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            color: #ffffff;
+            border: 1.5px solid rgba(218, 165, 32, 0.6);
+        }
+        
+        /* جميع الكروت عند المرور أو الضغط يصبح لون النص برتقالي فقط */
+        .card:hover, .card:active {
+            color: #f59e0b;  /* برتقالي */
+            transform: translateY(-3px);
+            background: rgba(0, 0, 0, 0.85);
+            border-color: rgba(218, 165, 32, 1);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+        }
+        
+        /* عند الضغط فقط حركة مختلفة */
+        .card:active {
+            transform: translateY(2px);
+        }
+        
+        @media (max-width: 550px) {
+            body {
+                padding: 0 16px 40px 16px;
+            }
+            .card {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+            .cards-container {
+                gap: 12px;
+                max-width: 260px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .card {
+                padding: 16px 28px;
+                font-size: 20px;
+            }
+            .cards-container {
+                max-width: 350px;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cards-container">
+        <!-- تم إزالة target="_blank" و rel="noopener noreferrer" -->
+        <a href="https://h-80.github.io/abbasalaraji.video" class="card">الفيديوهات</a>
+        <a href="https://h-80.github.io/abbasalaraji.com" class="card">مواقع التواصل الأجتماعي</a>
+    </div>
+</body>
+</html>
